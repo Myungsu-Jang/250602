@@ -1,0 +1,136 @@
+body{
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+}
+
+#outer{
+    background-color: red;
+    width: 80vw;
+    min-width: 400px;
+    height: 80vh;
+    min-height: 300px;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden; 
+}
+
+aside{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-right: 2px solid black;
+}
+
+aside button{
+     width: 80%;
+    height: 50px;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-left: 2px solid black;
+    border-left: 2px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+}
+
+.modal {
+    display: none;
+    width: 60vw;
+    height: 60vh;
+    position: fixed;
+    background-color: white;
+    padding: 20px;
+    z-index: 999;
+}
+.modal.active {
+    display: block;
+}
+
+/* table */
+
+table {
+    width: 80%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px black;
+}
+th, td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: center;
+}
+th {
+    background-color: white;
+}
+
+/* btn */
+
+button {
+    background-color: #f0f8ff; 
+    color: #006680;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover {
+    background-color: #e0f0ff;
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* 회원가입입 */
+#joinForm {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    
+}
+
+/* label-input 한 줄 정렬 */
+#joinForm label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/* input 정렬 및 여백 */
+#joinForm input[type="text"],
+#joinForm input[type="password"],
+#joinForm input[type="email"],
+#joinForm input[type="tel"] {
+    width: 250px;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+/* submit 버튼 스타일 (선택) */
+#joinForm input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
